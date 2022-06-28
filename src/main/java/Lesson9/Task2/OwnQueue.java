@@ -7,4 +7,5 @@ public interface OwnQueue {
     Integer remove();
 
     Integer element();
+
 }
