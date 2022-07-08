@@ -5,16 +5,12 @@ import java.util.regex.Pattern;
 
 public class Pesel {
 
-    public void checkLength(CharSequence Pesel) {
-        Pattern pattern = Pattern.compile("\\d\\d\\d\\d\\d\\d\\d\\d\\d");
+    public static void validatePesel(CharSequence Pesel){
+        Pattern pattern = Pattern.compile("^\\d{11}$");
         Matcher matcher = pattern.matcher(Pesel);
         boolean matches = matcher.matches();
     }
 
-    public void checkPropiety(CharSequence Pesel) {
-        Pattern pattern = Pattern.compile(".*\\d.*");
-        Matcher matcher = pattern.matcher(Pesel);
-        boolean matches = matcher.matches();
     }
 
-}
+
