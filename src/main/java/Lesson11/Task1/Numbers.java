@@ -11,7 +11,7 @@ public class Numbers {
         IntStream numbers = IntStream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         numbers
-                .filter(IntStream -> (IntStream % 3) == 0)
+                .filter(integer  -> (integer  % 3) == 0)
                 .boxed()
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
