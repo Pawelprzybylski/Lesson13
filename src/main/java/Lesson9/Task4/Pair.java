@@ -2,14 +2,14 @@ package Lesson9.Task4;
 
 public class Pair<K, V> {
 
-    public K keys;
-    public V values;
+    public K key;
+    public V value;
 
-    public K geyKeys(){
-        return keys;
+    public K geyKey(){
+        return key;
     }
-    public V getValues(){
-        return values;
+    public V getValue(){
+        return value;
     }
 
 }
