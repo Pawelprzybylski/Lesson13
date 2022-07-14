@@ -6,16 +6,16 @@ import java.time.temporal.WeekFields;
 
 public class BirthInformation {
 
-    public static void printInformation(int rrrr, int mm, int dd) {
+    public static void printInformationAboutBirth(String birthDate) {
 
-        LocalDate dateOfBirth = LocalDate.of(rrrr, mm, dd);
+        var parse = LocalDate.parse(birthDate);
 
         ZonedDateTime zone = ZonedDateTime.now((ZoneId.systemDefault()));
         LocalDate actualDate = zone.toLocalDate();
-        long age = ChronoUnit.YEARS.between(dateOfBirth, actualDate);
+        long age = ChronoUnit.YEARS.between(parse, actualDate);
 
-        DayOfWeek day = dateOfBirth.getDayOfWeek();
-        int dayOfYear = dateOfBirth.get(WeekFields.ISO.weekOfYear());
+        DayOfWeek day = parse.getDayOfWeek();
+        int dayOfYear = parse.get(WeekFields.ISO.weekOfYear());
 
         System.out.println("You are " + age + " years old");
         System.out.println("You were born on: " + day);
