@@ -1,20 +1,28 @@
 package Lesson12.Task2;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
         Scanner scanner=new Scanner(System.in);
+        String inputText= scanner.nextLine();
 
-        System.out.println("Wprowadź dowolny tekst");
-        String text= scanner.nextLine();
+Thread t1= new Input(inputText);
+Thread t2=new Output(inputText);
 
-        String textToUpperCase= text.toUpperCase(Locale.ROOT);
-        System.out.println(textToUpperCase);
+t1.start();
+t2.start();
+
+
+
+
+
+
+
+}
+
 
     }
 
-}
+
