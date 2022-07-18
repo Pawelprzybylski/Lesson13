@@ -2,7 +2,7 @@ package Lesson12.Task4;
 
 import java.util.List;
 
-public class Task4 {
+public class Main {
 
     public static void main(String[] args) {
 
