@@ -1,4 +1,4 @@
-package Lesson11.Task1;
+package Lesson11.Lesson11.Task1;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

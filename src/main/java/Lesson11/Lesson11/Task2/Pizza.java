@@ -1,4 +1,4 @@
-package Lesson11.Task2;
+package Lesson11.Lesson11.Task2;
 
 public class Pizza {
     private final boolean vegetarian;
