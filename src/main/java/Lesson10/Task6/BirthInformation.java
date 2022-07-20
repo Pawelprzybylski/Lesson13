@@ -10,9 +10,7 @@ public class BirthInformation {
 
         var parse = LocalDate.parse(birthDate);
 
-        ZonedDateTime zone = ZonedDateTime.now((ZoneId.systemDefault()));
-        LocalDate actualDate = zone.toLocalDate();
-        long age = ChronoUnit.YEARS.between(parse, actualDate);
+        long age = ChronoUnit.YEARS.between(parse, LocalDate.now(ZoneId.systemDefault()));
 
         DayOfWeek day = parse.getDayOfWeek();
         int dayOfYear = parse.get(WeekFields.ISO.weekOfYear());
