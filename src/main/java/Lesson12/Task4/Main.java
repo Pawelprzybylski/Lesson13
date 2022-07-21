@@ -14,9 +14,8 @@ public class Main {
 
             for (double averageNumbers : numbers) {
                 average += averageNumbers;
-                average /= numbers.size();
             }
-
+            average /= numbers.size();
             System.out.println("średnia wprowadzonych liczby: ");
             System.out.println(average);
         }
@@ -29,7 +28,7 @@ public class Main {
             int variable = 0;
 
             for (int addnumbers : numbers) {
-                variable += addnumbers++;
+                variable += addnumbers;
             }
 
             System.out.println("suma wprowadzonych liczby: ");
